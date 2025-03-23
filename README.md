@@ -23,7 +23,29 @@ A web-based dashboard for monitoring Mikrotik routers.
 
 3. Create a \`.env\` file with your router configurations
 
-4. Start the API server:
+   .env file should be structured like:
+   
+# Server configuration
+PORT=3001
+
+# Router 1 configuration
+ROUTER1_NAME=DeviceName
+ROUTER1_IP=deviceIPaddress
+ROUTER1_USER=api
+ROUTER1_PASSWORD=StrongPassword
+ROUTER1_MODEL=hAP ac2
+ROUTER1_CLIENT=CompanyorOwnerName
+
+# Router 2 configuration (optional)
+ROUTER2_NAME=DeviceName
+ROUTER2_IP=deviceIPaddress
+ROUTER2_USER=api
+ROUTER2_PASSWORD=StrongPassword
+ROUTER2_MODEL=CRS125-24G-1S
+ROUTER2_CLIENT=CompanyorOwnerName
+
+
+5. Start the API server:
    
    node server.js
    
